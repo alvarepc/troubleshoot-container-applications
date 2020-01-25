@@ -29,7 +29,7 @@ else
 	print_FAIL
 fi
 
-printf "%s%s\n" "$var: Creating the network-review project :$var"
+printf "%s%s\n" "$var: Creating the execute-review project :$var"
 if oc new-project execute-review
 then
 	print_SUCCESS
