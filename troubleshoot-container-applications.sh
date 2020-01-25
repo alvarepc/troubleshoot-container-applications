@@ -19,6 +19,7 @@ printf "%s\n" "-----------------------------------------------------------------
 printf "WARNING: Do not press any key while the script running\n"
 cp /etc/sysconfig/docker /etc/sysconfig/docker.lab.bkp
 cp ./docker /etc/sysconfig/docker
+dos2unix /etc/sysconfig/docker
 systemctl restart docker
 printf "%s${NC}\n" "------------------------------------------------------------------------------"
 printf "%s%s\n" "$var: Logging in as the developer user :$var"
